@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Sites para negócios e criadores de conteúdo</title>
+<meta name="description" content="Desenvolvimento de sites simples, rápidos e que vendem, feitos sob medida para pequenos negócios e influenciadores.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav wrap">
+    <a href="#top" class="logo">
+     <div class="gojozin">
+        <img src="images/Gojozin.jpg" alt="Gojozin.">
+     </div>
+      <span class="dot"></span>kah.dev</a>
+       <ul class="nav-links" id="navLinks">
+        <li><a href="#servicos" data-section="servicos">Serviços</a></li>
+        <li><a href="#sobre" data-section="portfolio">Sobre</a></li>
+        <li><a href="#processo" data-section="processo">Como funciona</a></li>
+        <li><a href="#contato" data-section="contato">Contato</a></li>
+       </ul>
+    <a href="#contato" class="nav-cta">Fale comigo</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- navegação lateral por pontos — clique e a página desliza até a seção -->
+<nav class="dot-nav" aria-label="Navegação rápida">
+  <a href="#top" data-label="Início" data-section="top"></a>
+  <a href="#servicos" data-label="Serviços" data-section="servicos"></a>
+  <a href="#sobre" data-label="Sobre" data-section="sobre"></a>
+  <a href="#processo" data-label="Como funciona" data-section="processo"></a>
+  <a href="#contato" data-label="Contato" data-section="contato"></a>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero on-dark">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Sites sob medida</span>
+        <h1>Sites simples,<br>rápidos e que <em>vendem</em>.</h1>
+        <p class="lede">Construo sites para pequenos negócios e criadores de conteúdo que precisam de uma presença online profissional — sem enrolação, sem custo de agência grande.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Vamos conversar ↓</a>
+          <a href="#sobre" class="btn btn-ghost">Sobre mim</a>
+        </div>
+      </div>
+      <div class="browser-card">
+        <div class="browser-bar">
+          <span class="b-dot"></span><span class="b-dot"></span><span class="b-dot"></span>
+          <span class="b-url">seunegocio.com.br</span>
+        </div>
+        <div class="browser-body">
+          <div class="mock-line w60"></div>
+          <div class="mock-line w40"></div>
+          <div class="mock-block"></div>
+          <div class="mock-line w60"></div>
+          <div class="mock-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Sites institucionais</span>
+      <span>Landing pages</span>
+      <span>Link na bio</span>
+      <span>Lojas simples</span>
+      <span>Sites institucionais</span>
+      <span>Landing pages</span>
+      <span>Link na bio</span>
+      <span>Lojas simples</span>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="on-light">
+    <div class="nanami">    
+        <img src="images/nanami.png" alt="NanamiKento.">
+    </div>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">O que eu faço</span>
+        <h2>Três formas de te colocar no ar.</h2>
+        <p class="muted">Escolha o que faz sentido pro seu momento — dá pra começar pequeno e crescer depois.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service">
+          <span class="num">01</span>
+          <h3>Site institucional</h3>
+          <p>Página completa contando quem você é, o que você oferece e como falar com você. Ideal pra negócios locais.</p>
+        </div>
+        <div class="service">
+          <span class="num">02</span>
+          <h3>Landing page</h3>
+          <p>Uma página focada em um único objetivo: vender um produto, divulgar um lançamento ou capturar contatos.</p>
+        </div>
+        <div class="service">
+          <span class="num">03</span>
+          <h3>Link na bio</h3>
+          <p>Um mini-site com todos os seus links importantes, com a sua cara — muito além dos links genéricos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="sobre" class="on-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Sobre mim</span>
+        <h2>Kah</h2>
+        <p class="muted">Estudante de ADS com formação em TI. Trabalho com desenvolvimento Web e principalmente Designs modernos e dinamicos para seu Negocio!</p>
+      </div>
+      <div class="work-grid" id="workGrid">
+        <!-- os cards são gerados via JS a partir do array PROJECTS em js/script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="on-light">
+    <div class="satoru">    
+        <img src="images/satoru.png" alt="GojoSatoru.">
+    </div>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do primeiro contato ao site no ar.</h2>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <span class="step">01</span>
+          <div>
+            <h3>Conversa inicial</h3>
+            <p>Você me conta sobre seu negócio, o que precisa e qual é o prazo. Sem compromisso.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">02</span>
+          <div>
+            <h3>Proposta e orçamento</h3>
+            <p>Te mando um valor fechado e um prazo realista, já com exemplos parecidos com o que você precisa.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">03</span>
+          <div>
+            <h3>Desenvolvimento</h3>
+            <p>Construo o site e te mostro o progresso pelo caminho, pra gente ajustar juntos antes de finalizar.</p>
+          </div>
+        </div>
+        <div class="process-item">
+          <span class="step">04</span>
+          <div>
+            <h3>No ar</h3>
+            <p>Publico o site, configuro o domínio e te explico como atualizar o conteúdo sozinho, se quiser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contato" class="on-dark">
+    <div class="wrap">
+      <div class="cta-band">
+        <span class="eyebrow">Vamos começar</span>
+        <h2>Pronto pra ter um site que representa seu trabalho?</h2>
+        <p>Me chama no Instagram ou manda uma mensagem direto no WhatsApp — respondo rapidinho.</p>
+        <div class="cta-actions">
+          <a href="https://instagram.com/devkahs2" target="_blank" rel="noopener" class="btn-social btn-instagram" ><i class="bi bi-instagram"></i> Instagram</a>
+          <a href="https://wa.me/5511949371240" target="_blank" rel="noopener" class="btn-social btn-whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="on-dark hairline">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a href="#top" class="logo"><span class="dot"></span>kah.dev</a>
+    </div>
+    <p class="footer-fine">© <span id="year"></span> 2026 — Melhorando seu dia-a-dia!</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
