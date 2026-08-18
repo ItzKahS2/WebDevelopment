@@ -971,13 +971,13 @@ footer{
   .nanami{
     width: 240px;
     left: -85px;
-    opacity: .22;
+    opacity: .0;
   }
 
   .satoru{
     width: 240px;
     right: -90px;
-    opacity: .22;
+    opacity: .0;
   }
 
   .footer-links{
