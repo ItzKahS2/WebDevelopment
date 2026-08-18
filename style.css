@@ -363,6 +363,21 @@ header{
     );
 }
 
+.gojozin{
+    width: clamp(10px, 38vw, 50px);
+    height: clamp(10px, 38vw, 50px);
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.gojozin img {
+    width: clamp(10px, 38vw, 50px);
+    height: clamp(10px, 38vw, 50px);
+    display: block;
+
+}
+
 #sobre{
     background-image: url("images/choso.jpg");
     position: relative;
@@ -623,7 +638,6 @@ footer{
   }
 
   /* PERSONAGENS */
-  .nanami,
   .satoru{
     max-width: 360px;
     height: auto;
@@ -781,6 +795,7 @@ footer{
   .section-head p{
     font-size: .95rem;
   }
+
 
   /* PERSONAGENS
      Viram elementos decorativos e não devem disputar
@@ -954,14 +969,22 @@ footer{
   }
 
   .nanami{
-    width: 240px;
-    left: -85px;
+   width: 540px;
+    height: auto;
+    right: -80px;
+    bottom:-126%;
+    transform: scale(1);
+    transform-origin: bottom right;
     opacity: .0;
   }
 
   .satoru{
-    width: 240px;
-    right: -90px;
+    width: 280px;
+    height: auto;
+    right: -80px;
+    bottom: -272%;
+    transform: scale(1);
+    transform-origin: bottom right;
     opacity: .0;
   }
 
