@@ -580,17 +580,6 @@ footer{
     right: 18px;
   }
 
-  .nanami{
-    width: clamp(280px, 34vw, 450px);
-    height: auto;
-  }
-
-  .satoru{
-    width: clamp(280px, 34vw, 450px);
-    height: auto;
-  }
-}
-
 
 /* =========================================================
    TABLETS
@@ -636,10 +625,6 @@ footer{
     width: min(100%, 700px);
     margin: 0 auto;
   }
-  
-  .nanami,
-  .satoru {
-    display: none !important;
 
   /* SERVIÇOS */
   .services-grid{
@@ -1019,4 +1004,16 @@ footer{
   .browser-card{
     transform: none;
   }
+}
+
+
+  /* =========================================================
+   PERSONAGENS — SOMENTE PC / NOTEBOOK
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+    .nanami,
+    .satoru {
+        display: none !important;
+    }
 }
