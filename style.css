@@ -682,9 +682,6 @@ footer{
   .logo{
     font-size: .92rem;
   }
-
-  /* O menu original já funciona aqui.
-     Apenas garantimos que a área clicável fique confortável. */
   .menu-btn{
     width: 34px;
     height: 26px;
@@ -765,10 +762,6 @@ footer{
     font-size: .95rem;
   }
 
- 
-   .nanami,
-  .satoru {
-    display: none !important;
 
   /* SERVIÇOS */
   .service{
@@ -920,9 +913,6 @@ footer{
     padding: 17px;
   }
   
-  .nanami,
-  .satoru {
-    display: none !important;
 
   .footer-links{
     gap: 10px 14px;
