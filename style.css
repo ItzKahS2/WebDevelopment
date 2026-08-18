@@ -363,21 +363,6 @@ header{
     );
 }
 
-.gojozin{
-    width: clamp(10px, 38vw, 50px);
-    height: clamp(10px, 38vw, 50px);
-    border-radius: 50%;
-    overflow: hidden;
-
-}
-
-.gojozin img {
-    width: clamp(10px, 38vw, 50px);
-    height: clamp(10px, 38vw, 50px);
-    display: block;
-
-}
-
 #sobre{
     background-image: url("images/choso.jpg");
     position: relative;
