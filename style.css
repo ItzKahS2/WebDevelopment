@@ -636,27 +636,10 @@ footer{
     width: min(100%, 700px);
     margin: 0 auto;
   }
-
-  /* PERSONAGENS */
-  .satoru{
-    max-width: 360px;
-    height: auto;
-    opacity: .0;
-  }
-
-  .nanami{
-    left: -60px;
-    transform: scale(1.08);
-    transform-origin: bottom left;
-    opacity: .0;
-  }
-
-  .satoru{
-    right: -50px;
-    transform: scale(1.12);
-    transform-origin: bottom right;
-    opacity: .0;
-  }
+  
+  .nanami,
+  .satoru {
+    display: none !important;
 
   /* SERVIÇOS */
   .services-grid{
@@ -797,27 +780,10 @@ footer{
     font-size: .95rem;
   }
 
-
-  /* PERSONAGENS
-     Viram elementos decorativos e não devem disputar
-     espaço com texto/botões no celular. */
-  .nanami{
-    width: 280px;
-    height: auto;
-    left: -75px;
-    transform: scale(1);
-    transform-origin: bottom left;
-    opacity: .30;
-  }
-
-  .satoru{
-    width: 280px;
-    height: auto;
-    right: -80px;
-    transform: scale(1);
-    transform-origin: bottom right;
-    opacity: .30;
-  }
+ 
+   .nanami,
+  .satoru {
+    display: none !important;
 
   /* SERVIÇOS */
   .service{
@@ -968,26 +934,10 @@ footer{
   .work-info{
     padding: 17px;
   }
-
-  .nanami{
-   width: 540px;
-    height: auto;
-    right: -80px;
-    bottom:-126%;
-    transform: scale(1);
-    transform-origin: bottom right;
-    opacity: .0;
-  }
-
-  .satoru{
-    width: 280px;
-    height: auto;
-    right: -80px;
-    bottom: -272%;
-    transform: scale(1);
-    transform-origin: bottom right;
-    opacity: .0;
-  }
+  
+  .nanami,
+  .satoru {
+    display: none !important;
 
   .footer-links{
     gap: 10px 14px;
