@@ -338,7 +338,7 @@ header{
 }
 
 .satoru {
-    right: clamp(38px, -2vw, -10px);
+    right: 38px;
     position: absolute;
     width: clamp(280px, 38vw, 500px);
     height: clamp(380px, 50vw, 600px);
@@ -536,4 +536,528 @@ footer{
   .hero .wrap{ grid-template-columns:1fr; }
   .hero{ padding:64px 0 48px; }
   section{ padding:64px 0; }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — DESKTOP / NOTEBOOK / TABLET / CELULAR
+   =========================================================
+   As regras acima continuam sendo a base visual do projeto.
+   Esta camada apenas adapta tamanhos, espaçamentos e
+   posicionamentos para telas menores.
+   ========================================================= */
+
+
+/* =========================================================
+   NOTEBOOKS E TELAS MÉDIAS
+   901px — 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  :root{
+    --max: 1080px;
+  }
+
+  .wrap{
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .hero .wrap{
+    gap: 34px;
+  }
+
+  .hero h1{
+    font-size: clamp(2.35rem, 5vw, 3.6rem);
+  }
+
+  .browser-card{
+    width: 100%;
+  }
+
+  .dot-nav{
+    right: 18px;
+  }
+
+  .nanami{
+    width: clamp(280px, 34vw, 450px);
+    height: auto;
+  }
+
+  .satoru{
+    width: clamp(280px, 34vw, 450px);
+    height: auto;
+  }
+}
+
+
+/* =========================================================
+   TABLETS
+   601px — 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dot-nav{
+    display: none;
+  }
+
+  /* HEADER */
+  .nav{
+    padding: 16px 20px;
+  }
+
+  /* HERO */
+  .hero{
+    padding: 72px 0 56px;
+  }
+
+  .hero .wrap{
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .hero h1{
+    font-size: clamp(2.25rem, 7vw, 3.5rem);
+    max-width: 780px;
+  }
+
+  .hero p.lede{
+    max-width: 60ch;
+  }
+
+  .browser-card{
+    width: min(100%, 700px);
+    margin: 0 auto;
+  }
+
+  /* PERSONAGENS */
+  .nanami,
+  .satoru{
+    max-width: 360px;
+    height: auto;
+  }
+
+  .nanami{
+    left: -60px;
+    transform: scale(1.08);
+    transform-origin: bottom left;
+    opacity: .45;
+  }
+
+  .satoru{
+    right: -50px;
+    transform: scale(1.12);
+    transform-origin: bottom right;
+    opacity: .45;
+  }
+
+  /* SERVIÇOS */
+  .services-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .service{
+    padding: 30px 26px;
+  }
+
+  /* PORTFÓLIO */
+  .work-grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .work-card{
+    width: 100%;
+  }
+
+  /* PROCESSO */
+  .process-item{
+    grid-template-columns: 72px 1fr;
+    gap: 20px;
+  }
+
+  /* FOOTER */
+  .footer-grid{
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================================
+   CELULARES
+   381px — 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .wrap{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  section{
+    padding: 56px 0;
+  }
+
+  /* HEADER */
+  .nav{
+    padding: 15px 16px;
+  }
+
+  .logo{
+    font-size: .92rem;
+  }
+
+  /* O menu original já funciona aqui.
+     Apenas garantimos que a área clicável fique confortável. */
+  .menu-btn{
+    width: 34px;
+    height: 26px;
+  }
+
+  /* HERO */
+  .hero{
+    padding: 56px 0 48px;
+  }
+
+  .hero .wrap{
+    display: block;
+  }
+
+  .hero h1{
+    font-size: clamp(2rem, 10.5vw, 3rem);
+    line-height: 1.04;
+    margin: 16px 0 18px;
+  }
+
+  .hero p.lede{
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 26px;
+  }
+
+  /* BOTÕES */
+  .hero-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-actions .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn{
+    padding: 14px 20px;
+  }
+
+  /* MOCKUP */
+  .browser-card{
+    width: 100%;
+    margin-top: 32px;
+    transform: none;
+  }
+
+  .browser-body{
+    padding: 16px;
+  }
+
+  .browser-body .mock-block{
+    height: 80px;
+  }
+
+  .browser-bar{
+    padding: 9px 11px;
+  }
+
+  .browser-bar .b-url{
+    margin-left: 7px;
+    font-size: .66rem;
+  }
+
+  /* TÍTULOS DAS SEÇÕES */
+  .section-head{
+    margin-bottom: 32px;
+  }
+
+  .section-head h2{
+    font-size: clamp(1.75rem, 8vw, 2.3rem);
+  }
+
+  .section-head p{
+    font-size: .95rem;
+  }
+
+  /* PERSONAGENS
+     Viram elementos decorativos e não devem disputar
+     espaço com texto/botões no celular. */
+  .nanami{
+    width: 280px;
+    height: auto;
+    left: -75px;
+    transform: scale(1);
+    transform-origin: bottom left;
+    opacity: .30;
+  }
+
+  .satoru{
+    width: 280px;
+    height: auto;
+    right: -80px;
+    transform: scale(1);
+    transform-origin: bottom right;
+    opacity: .30;
+  }
+
+  /* SERVIÇOS */
+  .service{
+    padding: 25px 20px;
+  }
+
+  .service h3{
+    font-size: 1.12rem;
+  }
+
+  .service p{
+    font-size: .92rem;
+  }
+
+  /* PORTFÓLIO */
+  .work-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-thumb{
+    height: 150px;
+    font-size: 1.4rem;
+  }
+
+  .work-info{
+    padding: 18px 18px 22px;
+  }
+
+  .work-info h3{
+    font-size: 1.08rem;
+  }
+
+  /* PROCESSO */
+  .process-item{
+    grid-template-columns: 1fr;
+    gap: 9px;
+    padding: 22px 0;
+  }
+
+  .process-item .step{
+    font-size: .82rem;
+  }
+
+  .process-item p{
+    font-size: .92rem;
+  }
+
+  /* CTA */
+  .cta-band{
+    padding: 8px 0;
+  }
+
+  .cta-band h2{
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .cta-band p{
+    margin: 14px auto 26px;
+    font-size: .95rem;
+  }
+
+  .cta-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn-social{
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  /* FOOTER */
+  footer{
+    padding: 34px 0 28px;
+  }
+
+  .footer-grid{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links{
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .footer-fine{
+    font-size: .68rem;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ATÉ 380px
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .wrap{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  section{
+    padding: 50px 0;
+  }
+
+  .hero{
+    padding: 50px 0 42px;
+  }
+
+  .hero h1{
+    font-size: 2rem;
+  }
+
+  .hero p.lede{
+    font-size: .94rem;
+  }
+
+  .eyebrow{
+    font-size: .67rem;
+    letter-spacing: .1em;
+  }
+
+  .browser-body{
+    padding: 13px;
+  }
+
+  .browser-body .mock-block{
+    height: 70px;
+  }
+
+  .service{
+    padding: 22px 17px;
+  }
+
+  .work-thumb{
+    height: 135px;
+  }
+
+  .work-info{
+    padding: 17px;
+  }
+
+  .nanami{
+    width: 240px;
+    left: -85px;
+    opacity: .22;
+  }
+
+  .satoru{
+    width: 240px;
+    right: -90px;
+    opacity: .22;
+  }
+
+  .footer-links{
+    gap: 10px 14px;
+  }
+}
+
+
+/* =========================================================
+   TELAS MUITO BAIXAS
+   Evita que o conteúdo fique apertado em celulares
+   horizontais ou aparelhos com pouca altura.
+   ========================================================= */
+
+@media (max-height: 650px) and (max-width: 900px) {
+
+  .hero{
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  section{
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Remove efeitos de hover que não fazem sentido no toque.
+   ========================================================= */
+
+@media (hover: none) {
+
+  .nav-links a:hover::after{
+    width: 0;
+  }
+
+  .work-card:hover{
+    transform: none;
+    border-color: var(--line-on-dark);
+    box-shadow: none;
+  }
+
+  .btn:hover,
+  .btn-social:hover{
+    transform: none;
+  }
+
+  .btn-instagram:hover{
+    box-shadow: 0 0 24px var(--glow);
+  }
+
+  .btn-whatsapp:hover{
+    border-color: rgba(255,255,255,0.3);
+    color: var(--ink-on-dark);
+  }
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE / REDUÇÃO DE MOVIMENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html{
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .browser-card{
+    transform: none;
+  }
 }
