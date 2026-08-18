@@ -641,20 +641,21 @@ footer{
   .satoru{
     max-width: 360px;
     height: auto;
+    opacity: .0;
   }
 
   .nanami{
     left: -60px;
     transform: scale(1.08);
     transform-origin: bottom left;
-    opacity: .45;
+    opacity: .0;
   }
 
   .satoru{
     right: -50px;
     transform: scale(1.12);
     transform-origin: bottom right;
-    opacity: .45;
+    opacity: .0;
   }
 
   /* SERVIÇOS */
